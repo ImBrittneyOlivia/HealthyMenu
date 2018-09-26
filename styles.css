@@ -1,0 +1,91 @@
+body {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* CSS for basic div and image placement*/
+div {
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 12px; /*round div container*/
+  background-size: cover;
+  position: relative; /*for positioning the text*/
+  margin: 40px 0 0 0; /* top,right,bottom,left*/
+}
+
+.first {
+  background: url("https://images.unsplash.com/photo-1505253304499-671c55fb57fe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a194e76b2970a942dbb29ba2548d95a0&auto=format&fit=crop&w=634&q=80");
+}
+.second {
+  background: url("https://images.unsplash.com/photo-1481931715705-36f5f79f1f3d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9bc8da56492a691480fe252b9590bbb4&auto=format&fit=crop&w=1054&q=80");
+}
+.third {
+  background: url("https://images.unsplash.com/photo-1493807402946-1a3fe6683ff2?ixlib=rb-0.3.5&s=c9a1a23f1819a90f27c90b1fc4c6ad12&auto=format&fit=crop&w=1350&q=80");
+}
+.fourth {
+  background: url("https://images.unsplash.com/photo-1492683962492-deef0ec456c0?ixlib=rb-0.3.5&s=ff25ea457a0074fecce9263137ae2234&auto=format&fit=crop&w=1338&q=80");
+}
+
+/* CSS for text*/
+p {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0.8;
+  padding: 18px;
+  text-align: justify;
+  line-height: 20px;
+  /*positioning text/p tag at bottom of div*/
+  position: absolute; /*if you want to use absolute and position something inside of container than parent must be position:relative*/
+  bottom: 0;
+  margin: 0;
+  width: auto;
+  border-radius: 0 0px 12px 12px;
+  text-height: 30px; /*basically we would change the height of our paragraph and everything that is inside a regular height*/
+}
+
+/*Css for dollar amount*/
+.price {
+  float: right;
+}
+
+h1 {
+  font-family: "Noto Serif KR", sans-serif;
+  font-size: 55px;
+  text-align: center;
+  font-weight: 300px;
+}
+h2 {
+  text-align: center;
+  margin: -25px 0 70px 0;
+}
+
+/*hide text */
+small {
+  opacity: 0;
+}
+/* this class with a p element then height will be applied to this class*/
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+    color: rgb(16, 136, 206);
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: -15px 0 60px 0;
+  }
+  div {
+    margin: 20px 12px 0px 12px;
+  }
+  p {
+    height: 80px;
+  }
+}
